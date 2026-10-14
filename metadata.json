@@ -1,0 +1,7 @@
+{
+  "name": "Bella Praiana | Moda Praia, Verão e Estilo",
+  "description": "Central digital e bio site premium da Bella Praiana. Moda praia, sofisticação e leveza à beira-mar.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
