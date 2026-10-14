@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --color-sand-50: #fbf9f5;
+  --color-sand-100: #f5efe6;
+  --color-sand-200: #eadecd;
+  --color-sand-300: #dac4a8;
+  --color-terracotta: #d96f43;
+  --color-terracotta-dark: #b8542c;
+  --color-terracotta-light: #fbeee7;
+  --color-ocean: #2b7a8c;
+  --color-ocean-dark: #194f5c;
+  --color-ocean-light: #e4f2f5;
+  --color-sun: #e8a735;
+}
+
+:root {
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Safe area padding helpers for mobile viewports */
+.pb-safe {
+  padding-bottom: max(1.25rem, env(safe-area-inset-bottom));
+}
+
+.pt-safe {
+  padding-top: max(1.25rem, env(safe-area-inset-top));
+}
+
+/* Glassmorphism subtle surface matching user request:
+   background branco/creme com transparência + backdrop blur discreto + borda clara fina */
+.beach-glass {
+  background: rgba(255, 252, 248, 0.72);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  box-shadow: 0 10px 30px -10px rgba(180, 130, 90, 0.12), 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.beach-glass-card {
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  box-shadow: 0 4px 20px -2px rgba(160, 120, 80, 0.08), 0 1px 2px rgba(0, 0, 0, 0.03);
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
